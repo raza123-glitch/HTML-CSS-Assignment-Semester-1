@@ -1,0 +1,126 @@
+
+:root {
+    --primary-color: #234638;
+    --secondary-color: #e9efe7;
+    --light-color: #fffdf7;
+    --text-color: #293b32;
+    --border-color: #d8dfd5;
+    --spacing: 13px;
+    --font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e8;
+    color: var(--text-color);
+    margin: 0;
+    padding: 35px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 35px 20px;
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+header p {
+    color: #d6e1d8;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--light-color);
+    font-size: var(--font-size);
+    border: 1px solid var(--border-color);
+}
+
+caption {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 22px;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: var(--spacing);
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--light-color);
+}
+
+tbody tr:hover {
+    background-color: #d3e3d2;
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:has(td[colspan="10"]) {
+    background-color: #dce6d9;
+    color: var(--primary-color);
+    text-align: left;
+    font-size: 15px;
+}
+
+tbody tr:has(td[colspan="10"]) td {
+    text-align: left;
+    padding: 15px;
+}
+
+tfoot {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+tfoot th, tfoot td {
+    padding: 16px;
+}
+
+footer {
+    max-width: 1250px;
+    margin: 25px auto 0;
+    padding: 18px;
+    text-align: center;
+    color: #66756a;
+    border-top: 1px solid var(--border-color);
+    font-size: 13px;
+}
