@@ -1,0 +1,379 @@
+/* GENERAL CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+
+/* =================================
+   PAGE 1 - MENU
+================================= */
+
+.menu-container {
+    background-color: #222222;
+    color: white;
+
+    padding: 20px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.menu-logo {
+    font-size: 26px;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-links a:hover {
+    color: orange;
+}
+
+.menu-content {
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.menu-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* =================================
+   PAGE 2 - LOGIN
+================================= */
+
+.login-body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.login-box {
+    width: 380px;
+    max-width: 90%;
+
+    background-color: white;
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.login-description {
+    color: #777777;
+    margin-bottom: 25px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    text-align: left;
+}
+
+.login-form label {
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-form button {
+    padding: 13px;
+
+    background-color: #667eea;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #4c5fc0;
+}
+
+.signup-text {
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =================================
+   PAGE 3 - PRODUCTS
+================================= */
+
+.product-header {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.product-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-header p {
+    color: #777777;
+}
+
+
+/* Flexbox Product Container */
+
+.product-container {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    padding: 20px 5% 60px;
+}
+
+
+/* Product Cards */
+
+.product-card {
+    background-color: white;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 220px;
+
+    max-width: 280px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    color: #667eea;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #222222;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #667eea;
+}
+
+
+/* =================================
+   PAGE 4 - NAVBAR AND HERO
+================================= */
+
+
+/* Navigation Bar */
+
+.hero-navbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #151515;
+    color: white;
+
+    padding: 20px 7%;
+}
+
+.hero-logo {
+    font-size: 26px;
+}
+
+.hero-logo span {
+    color: #00bcd4;
+}
+
+.hero-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-links a:hover {
+    color: #00bcd4;
+}
+
+
+/* Hero Section */
+
+.main-hero {
+    min-height: 550px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: linear-gradient(135deg, #141e30, #243b55);
+
+    color: white;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-text > p:first-child {
+    color: #00bcd4;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    display: inline-block;
+
+    background-color: #00bcd4;
+    color: #111111;
+
+    padding: 13px 25px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+.explore-btn:hover {
+    background-color: white;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 650px) {
+
+    .menu-container,
+    .hero-navbar {
+        flex-direction: column;
+    }
+
+    .menu-links,
+    .hero-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .menu-content h1 {
+        font-size: 30px;
+    }
+
+}
