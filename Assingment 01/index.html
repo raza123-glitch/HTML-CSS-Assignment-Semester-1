@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Raza | Portfolio</title>
+    <style>
+        :root {
+            --page-bg: rgb(167, 209, 254);
+            --panel-bg: rgb(116, 158, 242);
+            --text: rgb(2, 18, 71);
+            --line: rgb(2, 18, 71);
+            --card-bg: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 40px;
+            background: var(--page-bg);
+            color: var(--text);
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+
+        .container {
+            width: 100%;
+            min-height: calc(100vh - 80px);
+            border: 2px solid rgba(236, 236, 236, 0.9);
+            border-radius: 36px;
+            padding: 14px 18px 0;
+            background: var(--page-bg);
+        }
+
+        .top-bar {
+            background: var(--panel-bg);
+            border-radius: 30px;
+            padding: 14px 16px 18px;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2px 0 8px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(2rem, 2.6vw, 2.7rem);
+            letter-spacing: 0.04em;
+            font-weight: 700;
+        }
+
+        .hero p {
+            margin: 8px 0 0;
+            font-size: 1.05rem;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .divider {
+            border-top: 2px solid var(--line);
+            margin: 10px 0 15px;
+        }
+
+        .content {
+            padding: 0 8px 12px;
+        }
+
+        h2 {
+            margin: 18px 0 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+
+        .profile img {
+            width: 112px;
+            height: 112px;
+            object-fit: cover;
+            border-radius: 12px;
+            background: #d9d9d9;
+            border: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .profile p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        ul {
+            margin: 0 0 12px 20px;
+            padding-left: 10px;
+        }
+
+        li {
+            margin: 2px 0;
+            font-size: 0.95rem;
+        }
+
+        .edu-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 4px;
+        }
+
+        .edu-table td {
+            padding: 2px 0;
+            font-size: 0.95rem;
+        }
+
+        .edu-table td:last-child {
+            text-align: right;
+            padding-left: 18px;
+        }
+
+        .projects {
+            margin: 10px 0 0;
+            padding-left: 24px;
+        }
+
+        .projects li {
+            list-style: decimal;
+            margin: 6px 0;
+        }
+
+        .contact {
+            background: var(--panel-bg);
+            border-radius: 30px;
+            padding: 18px 20px 24px;
+            margin-top: 18px;
+            text-align: center;
+        }
+
+        .contact h1 {
+            margin: 0 0 18px;
+            font-size: clamp(1.7rem, 2vw, 2.2rem);
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 28px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .contact-row span {
+            white-space: nowrap;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                margin: 16px;
+            }
+
+            .container {
+                padding: 12px 12px 0;
+            }
+
+            nav {
+                font-size: 0.74rem;
+            }
+
+            nav a {
+                margin: 0 6px;
+            }
+
+            .profile {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-row {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="top-bar">
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="skills.html">Skills</a> |
+                <a href="projects.html">Projects</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="hero">
+                <h1>MOHAMMAD RAZA</h1>
+                <p>B.Tech Student • Learning HTML | CSS | JavaScript.</p>
+            </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <main class="content">
+            <section>
+                <h2>About Me</h2>
+                <div class="profile">
+                    <img src="947163365467588079.jpg" alt="Mohammad Raza profile picture" />
+                    <p>Hi, I am Mohammad Raza. I am a first-year B.Tech student. I am learning to build a portfolio.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>My Hobbies</h2>
+                <ul>
+                    <li>Learning New Technologies</li>
+                    <li>Playing Video Games</li>
+                    <li>Listening Music</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <table class="edu-table">
+                    <tr>
+                        <td>B.Tech (CSE)</td>
+                        <td>2026-2030</td>
+                    </tr>
+                    <tr>
+                        <td>Class XII</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Class X</td>
+                        <td>2024</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <ol class="projects">
+                    <li>Personal Portfolio Website</li>
+                    <li>Calculator</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>My Goals</h2>
+                <ul>
+                    <li>Become a skilled Software Developer.</li>
+                    <li>Build real-world projects.</li>
+                    <li>Improve my problem-solving skills.</li>
+                    <li>Learn new technologies.</li>
+                    <li>Keep learning and improving myself.</li>
+                </ul>
+            </section>
+        </main>
+
+        <div class="divider"></div>
+
+        <footer class="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-row">
+                <span>Email: Available on request</span>
+                <span>Phone: Available on request</span>
+                <span>🐙 GitHub: raza123-glitch</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
